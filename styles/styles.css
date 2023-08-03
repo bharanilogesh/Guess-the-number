@@ -1,0 +1,187 @@
+select a font
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-sky-blue: #8ecae6ff;
+  --clr-blue-green: #219ebcff;
+  --clr-prussian-blue: #023047ff;
+  --clr-selective-yellow: #ffb703ff;
+  --clr-ut-orange: #fb8500ff;
+  --ff-roboto: 'Roboto', sans-serif;
+  --ff-noto-sans: 'Noto Sans', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-roboto);
+}
+
+/* global styles */
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+ 
+}
+/*  global classes */
+
+/* section */
+.section,
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+body {
+  background-color: var(--clr-blue-green);
+  height: auto;
+  width: auto;
+  
+
+.card {
+  width: 70%;
+  background-color: white;
+  flex-direction:column;
+  margin: 7rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;  
+}
+
+.tittle {
+  font-size: 2.5rem;
+  font-weight: 750;
+  padding: 0.5rem auto;
+}
+
+.description {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.score {
+  color: brown;
+  font-size: 1.5rem;
+}
+
+.random-guess {
+  font-size: 3rem;
+  font-weight: 900;
+  color: red;
+  display: flex;
+  width: 10rem;
+  margin: 0 auto;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--clr-blue-green);
+}
+
+.user-input {
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: aqua;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 0.5rem;
+  gap: 1rem;
+}
+
+.btn-submit {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  color: black;
+  background-color: chocolate;
+  box-sizing: border-box;
+  gap: 1rem;
+  margin:1.5rem auto;
+  cursor: pointer;
+}
+
+.error-message {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: auto;
+  color: red;
+  display: none;
+}
+
+}
+
+
+
+
